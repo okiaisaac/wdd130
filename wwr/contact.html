@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nile Water Rafting | WDD 130</title>
+    <meta name="description" content="Contact Nile Water Rafting for inquiries about rafting adventures, reservations, or suggestions. Get in touch with our experienced team.">
+    <meta name="author" content="Phillip Mubbala">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/brownrafting.jpeg" alt="Nile Water Rafting Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact-info">
+                <h1>Contact Us</h1>
+                <div class="info-grid">
+                    <div class="text-info">
+                        <h2>Get in Touch</h2>
+                        <address>
+                            <p>📍 Address: Plot 1902 Buwenda, Jinja, Uganda</p>
+                            <p>📞 <a href="tel:+256787508236">Phone Numbers: +256 787 508 236</a>, <a href="tel:+256702468286">+256 702 468 286</a> (both available on WhatsApp)</p>
+                            <p>✉️ <a href="mailto:info@whitenilerafting.com">Email: info@whitenilerafting.com</a></p>
+                        </address>
+                    </div>
+                    <div class="map">
+                        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d103161.81137000828!2d33.16617564707053!3d0.4342051637756634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1729160847259!5m2!1sen!2sug" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="employee-profiles">
+                <h2>Our Team</h2>
+                <div class="profile-grid">
+                    <figure>
+                        <img src="images/jovia.jpg" alt="Jovia - Lead Guide" width="200" height="200">
+                        <figcaption>Mulerwa Jovia - Lead Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/CDF.webp" alt="Muhoozi Kainerugaba - Safety Director" width="200" height="200">
+                        <figcaption>Gen.Muhoozi Kainerugaba - Safety Director</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mumbejja.jpg" alt="Nashiba - Customer Relations" width="200" height="200">
+                        <figcaption>Nashiba.L - Customer Relations</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="/submit-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Purpose of Message:</p>
+                        <div class="radio-options">
+                            <label for="purpose-inquiry">
+                                <input type="radio" id="purpose-inquiry" name="purpose" value="inquiry" required>
+                                General Inquiry
+                            </label>
+                            <label for="purpose-reservation">
+                                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+                            <label for="purpose-suggestion">
+                                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-group newsletter">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-right">
+                <nav class="sociallinks">
+                    <p>&copy; 2024 River Nile Rafting | Phillip Mubbala Rafting. All rights reserved</p>
+                    <a href="https://facebook.com">
+                        <img src="images/fblogo.webp" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitterlogo.webp" alt="Twitter">
+                    </a>
+                    <a href="https://youtube.com">
+                        <img src="images/youtubelogo.webp" alt="YouTube">
+                    </a>
+                </nav>
+                <a href="images/contact-page-wireframe.jpg" target="_blank">Contact Us Wireframe</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

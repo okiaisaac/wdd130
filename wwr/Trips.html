@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nile Water Rafting - Trips</title>
+    <meta name="description" content="Explore thrilling rafting trips with Nile Water Rafting. Book your adventure today!">
+    <meta name="author" content="Phillip Mubbala">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="help" href="https://validator.w3.org/" title="HTML Validator">
+    <link rel="help" href="https://jigsaw.w3.org/css-validator/" title="CSS Validator">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <img src="images/brownrafting.jpeg" alt="logo" width="200" height="200">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="/wwr/images/whiteyellow.jpg" alt="White Water Rafting Adventure" class="full-width">
+            <h1>Exciting Rafting Trips</h1>
+        </div>
+        <section class="cta">
+            <h2>Ready for Your Adventure?</h2>
+            <p>Contact us to learn more about our trips!</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </section>
+
+        <!-- Trip Descriptions -->
+        <section class="trip-descriptions">
+            <div class="hero">
+                <img id="slideshowImage" src="/wwr/images/river-rapids.jpg" alt="River Rapids Adventure" width="100%" height="500vh">
+                <article class="trip">
+                    <h2 style="color: white;">Our Thrilling Trips</h2>
+                    <h3>River Rapids Adventure</h3>
+                    <p>Experience the thrill of navigating through challenging rapids in a heart-pounding adventure! Perfect for those with a love for excitement, this journey takes you through wild currents surrounded by breathtaking landscapes. Encounter surging waves, unexpected twists, and the refreshing splash of cool river water, making it ideal for thrill-seekers and nature enthusiasts alike. Whether you’re a seasoned rafter or trying it for the first time, this adventure will leave you with unforgettable memories and stories to share!</p>
+                    
+                </article>
+            </div>
+            <script>
+                // Array of image paths for the slideshow
+                const slideshowImages = [
+                    "/wwr/images/boat.jpg",
+                    "/wwr/images/helmate.jpg",
+                    "/wwr/images/kids.jpg"
+                ];
+            
+                let currentImageIndex = 0; // Index of the currently displayed image
+                const slideshowInterval = 3000; // Time in milliseconds for each image (3000ms = 3 seconds)
+            
+                // Select the image element to apply the slideshow
+                const slideshowImage = document.getElementById("slideshowImage");
+            
+                // Function to change the image source
+                function updateSlideshowImage() {
+                    // Set the image source to the current image in the array
+                    slideshowImage.src = slideshowImages[currentImageIndex];
+            
+                    // Move to the next image index, looping back to the start if needed
+                    currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
+                }
+            
+                // Start the slideshow with an interval
+                setInterval(updateSlideshowImage, slideshowInterval);
+            </script>
+
+            <div class="hero">
+                <img id="lakeEscapeImage" src="/wwr/images/move.jpg" alt="Lake Escape" width="100%" height="500vh">
+                <article class="trip">
+                    <h2 style="color: white;">Lake Escape</h2>
+                    <p>Enjoy a relaxing day on the serene, crystal-clear waters of Lake Paradise, where the beauty of nature meets tranquility. This breathtaking destination is perfect for families and friends seeking a peaceful escape from the hustle and bustle of daily life. From gentle boat rides to scenic picnic spots along the shore, Lake Paradise offers a variety of activities that everyone can enjoy. With its picturesque views, abundant wildlife, and calm ambiance, it’s the ideal setting for making lasting memories with loved ones. Experience the joy of unwinding in nature’s embrace at Lake Paradise.</p>
+
+                </article>
+            </div>
+            <script>
+                // Array of images for the "Lake Escape" slideshow
+                const lakeEscapeImages = [
+                    "/wwr/images/paddle.jpg",
+                    "/wwr/images/alone.jpg",
+                    "/wwr/images/forward.jpg" // Add any three images here
+                ];
+            
+                let lakeEscapeIndex = 0; // Initial index for Lake Escape slideshow
+                const lakeEscapeInterval = 3000; // Time interval (3 seconds)
+            
+                // Select the "Lake Escape" image by its ID
+                const lakeEscapeImage = document.getElementById("lakeEscapeImage");
+            
+                // Function to change the image source
+                function updateLakeEscapeImage() {
+                    lakeEscapeImage.src = lakeEscapeImages[lakeEscapeIndex];
+                    lakeEscapeIndex = (lakeEscapeIndex + 1) % lakeEscapeImages.length; // Move to the next image
+                }
+            
+                // Start the slideshow
+                setInterval(updateLakeEscapeImage, lakeEscapeInterval);
+            </script>
+            
+            <article class="trip">
+                <h2>Camping Trip</h2>
+                <p>Join us for a weekend of camping and rafting, where adventure meets relaxation! Embrace nature as you unwind under starlit skies, enjoy the warmth of a campfire, and share stories with friends and family. Dive into thrilling rafting experiences by day and cozy up in comfortable tents by night. Perfect for all ages, this trip offers a chance to disconnect from the everyday hustle, connect with the great outdoors, and create lasting memories that you’ll cherish for years to come!</p>
+            </article>
+
+            
+        </section>
+
+        <!-- Trips Table -->
+        <section class="trips-table">
+            <h2>Available Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>River Rapids Adventure</td>
+                        <td>1 Day</td>
+                        <td>Advanced</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Lake Escape</td>
+                        <td>Half Day</td>
+                        <td>Easy</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Camping Trip</td>
+                        <td>Weekend</td>
+                        <td>Intermediate</td>
+                        <td>$300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-right">
+            <nav class="sociallinks">
+                <p>&copy; 2024 River Nile Rafting | Phillip Mubbala Rafting. All rights reserved</p>
+                <a href="https://facebook.com">
+                    <img src="images/fblogo.webp" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitterlogo.webp" alt="Twitter">
+                </a>
+                <a href="https://youtube.com">
+                    <img src="images/youtubelogo.webp" alt="YouTube">
+                </a>
+            </nav>
+            <a href="/wwr/images/rafting-wireframe.svg" target="_blank">Trips Wireframe</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phillip Mubbala | WDD 130</title>
+    <meta name="description" content="Phillip Mubbala, BYU-Idaho WDD 130 course home page">
+    <meta name="author" content="Phillip Mubbala">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="help" href="https://validator.w3.org/" title="HTML Validator">
+    <link rel="help" href="https://jigsaw.w3.org/css-validator/" title="CSS Validator">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Nile Water Rafting - About Us</title>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <img src="images/brownrafting.jpeg" alt="logo" width="200px" height="200px">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <section>
+                <img src="/wwr/images/whiteyellow.jpg" alt="White Water Rafting Adventure" class="full-width">
+                <h1>Experience the Thrill of White Water Rafting</h1>
+            </section>
+        </div>
+        
+        <section class="cta">
+            <p>Ready for an adventure? Check out our <a href="trips.html">white water rafting trips</a> and book your experience today!</p>
+        </section>
+
+        <!-- Newsletter Signup Form -->
+        <h2>Join Our Newsletter</h2>
+        <section class="newsletter-signup">
+            <form action="/submit-newsletter" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        
+
+        <!-- Information Grid with Images and Text -->
+        <section class="info-grid">
+            <div class="grid-item">
+                <figure>
+                    <img src="/wwr/images/forward.jpg" alt="Rafting Adventure">
+                    <figcaption>Explore our beginner-friendly rafting trips!</figcaption>   
+                </figure>
+                <figure>
+                    <img src="/wwr/images/whiteyellow.jpg" alt="Rafting Adventure">
+                    <figcaption>Join us for group rafting excursions.</figcaption>   
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024🌴Phillip Mubbala🌴 Kampala, Uganda</p>
+    </footer>
+</body>
+</html>
