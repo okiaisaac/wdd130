@@ -1,109 +1,636 @@
-section h2{
-    color: coral;
+header {
+  display: flex;
+  justify-content: space-between; /* Space between the logo and navigation */
+  align-items: center; /* Vertically align the items */
+  background-color: #d4c4f7; /* Soft purple background color to match the screenshot */
+  padding: 10px 20px; /* Add some padding */
+  height: 150px; /* Adjust height if needed */
 }
 
- nav ul{
-    list-style: none;
-    display: flex;
-} 
+.logo img {
+  max-width: 100%; /* Ensures the logo image is responsive */
+  height: auto;
+  width: 200px; /* Match the size of the logo in the screenshot */
+}
 
-nav ul li a{
-    text-decoration: none;
+nav ul {
+  list-style: none; /* Removes default bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Displays the links in a row */
+  gap: 20px; /* Spacing between the links */
+  border: 2px solid #999; /* Border around the nav links */
+  padding: 10px 20px; /* Space inside the border */
+  background-color: white; /* Background color for nav */
+  border-radius: 10px; /* Rounded corners for the border */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Text color for the links */
+  font-weight: bold; /* Bold text */
+  padding: 10px 15px; /* Padding for the links */
+  display: block;
+  border-left: 1px solid #999; /* Adds border between links */
+}
+
+nav ul li:first-child a {
+  border-left: none; /* Remove left border for the first link */
+}
+
+nav ul li a:hover {
+  color: white; /* Change link color on hover */
+  background-color: #333; /* Background color on hover */
+  border-radius: 5px; 
+}
+
+section h2 {
+  color:BL;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  /* Headings */
-h1, h2, h3{
-    color: var(--primary-color);
-  }
+/* Headings */
+h1, h2, h3 {
+  color: var(--primary-color);
+}
 
-  h1 {
-    font-size: 36px;
-  }
+h1 {
+  font-size: 36px;
+  color: white;
+}
 
-  /* Paragraphs */
+/* Paragraphs */
 p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-  /* Social Media Links */
+/* Social Media Links */
 .social-media-links a {
-    text-decoration: none;
-    color: var(--secondary-color);
-  }
-  
-  /* Page Width */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
-  /* Hero Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
 .hero {
-    position: relative;
-    background-image: url('/wdd130/wwr/images/underrafting.jpg');
-    background-size: cover;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .hero h1 {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    color: #fff;
-    margin: 10px;
-    border-radius: 5px ;
-    background-color:black;
-  }
+  position: absolute;
+  background-size: cover;
+  height: 900px;
+  background-position: center;
+  color: white;
+}
 
-  
+.hero img {
+  height: 100%;
+  width: 1060px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color:white;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .hero article img {
-    float: right;
-    margin: 10px;
-    width: 100px;
-  }
-  
-  .hero article p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
 
-  section img{
-    width: 600px;
-  }
+.hero article img {
+  float: right;
+  margin: 10px;
+  width: 100px;
+}
 
-  footer img{
-    width: 30px;
-    float: 70px;
-  }
+/* Footer */
+footer img {
+  width: 50px;
+}
+footer p{
+  color:#ffffff;
+}
 
-  .ga{
-    width: 50%;
-    height: 50%;
-  }
-  
-  
+.ga img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.ga figcaption {
+  margin-top: 5px;
+}
+
+.ga {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.Nissi {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text within the section */
+  background-color: #f9f9f9; /* Light background for better visibility */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.jireh {
+  display:flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items */
+  text-align: justify; /* Justify text for a cleaner look */
+  gap: 20px; /* Space between elements */
+  padding: 20px; /* Add padding around the content */
+}
+
+.jireh img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Slightly rounded corners for images */
+}
+
+.jireh p {
+  margin: 10px 0; /* Space above and below paragraphs */
+  line-height: 1.6; /* Increased line height for readability */
+  color: #555; /* Slightly lighter color for text */
+}
+
+/* Social Links */
+.sociallinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.sociallinks p {
+  margin: 0 auto;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.sociallinks a {
+  margin-left: 10px;
+}
+
+.sociallinks a img {
+  width: 24px;
+}
+
+.sociallinks div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-info {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text-info h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.map {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+  background-color: steelblue;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+}
+
+.newsletter-signup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-signup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.newsletter-signup input {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.newsletter-signup button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: steelblue;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter-signup input:focus {
+  outline: none;
+  border-color: #333;
+}
+.footer-right {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between; /* Spaces items evenly */
+}
+
+.sociallinks {
+  display: flex;
+  gap: 10px; /* Adds space between social media icons */
+}
+
+.wireframe-link {
+  margin-left: 20px; 
+  text-decoration: none;
+}
+.contact-form {
+  max-width: 600px; /* Limits the width of the form for better readability */
+  margin: 20px auto; /* Centers the form on the page with some margin */
+  padding: 20px; /* Adds padding around the form for spacing */
+  border: 1px solid #ccc; /* Adds a light gray border around the form */
+  border-radius: 8px; /* Rounds the corners of the border */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+h2 {
+  text-align: center; /* Centers the heading */
+  color:white; /* Dark gray color for better readability */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Adds space between form groups */
+}
+
+label {
+  display: block; /* Makes labels block elements for full-width */
+  margin-bottom: 5px; /* Adds space below labels */
+  font-weight: bold; /* Makes labels bold for emphasis */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width for inputs and textarea */
+  padding: 10px; /* Adds padding inside inputs for comfort */
+  border: 1px solid #ccc; /* Light gray border for inputs */
+  border-radius: 4px; /* Rounds corners of inputs */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  font-size: 16px; /* Increases font size for better readability */
+}
+
+input[type="radio"] {
+  margin-right: 5px; /* Adds space between radio buttons and their labels */
+}
+
+.radio-options {
+  display: flex; /* Aligns radio buttons in a row */
+  gap: 15px; /* Adds space between radio options */
+}
+
+textarea {
+  height: 100px; /* Sets a fixed height for the textarea */
+  resize: vertical; /* Allows users to resize vertically */
+}
+
+.newsletter {
+  margin-top: 10px; /* Adds space above the newsletter checkbox */
+}
+
+.submit-btn {
+  display: block; /* Makes the button a block element */
+  width: 100%; /* Full width for the button */
+  padding: 10px; /* Padding inside the button for comfort */
+  background-color: #212121; /* Blue background color */
+  color:white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounds corners of the button */
+  font-size: 16px; /* Increases font size */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.employee-profiles {
+  max-width: 1200px; /* Maximum width of the section */
+  margin: 20px auto; /* Centers the section */
+  padding: 20px; /* Adds padding around the section */
+  text-align: center; /* Centers text within the section */
+}
+
+h2 {
+  color: #333; /* Dark gray color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.cta{
+  margin-bottom: 0px;
+}
+
+.profile-grid {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  gap: 20px; /* Space between the profile figures */
+}
+
+.profile-grid img{
+  border-radius: 50%;
+  border: 10px;
+  border-color: #007bff;
+
+}
+
+.profile-grid img:hover{
+  transform: scale(1.1); /* Increases the image size by 10% */
+  transition: transform 0.3s ease;
+}
+/* Add this to styles/rafting.css */
+
+/* Style for Google Maps iframe */
+.google-map {
+  width: 200%;
+  max-width: 100%;
+  height: 450px;
+  border: none;
+}
+footer {
+  background-color: #f8f9fa; /* Light background color for contrast */
+  border-top: 3px solid #007bff; /* Blue top border for the footer */
+  padding: 20px; /* Adds padding around the footer */
+  text-align: center; /* Centers the text inside the footer */
+  background-color: #212121;
+}
+
+
+figure img {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+figure:hover img {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+
+/* Optional: Hover effect for figure captions */
+figure figcaption {
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+figure:hover figcaption {
+  color: #007bff; /* Change caption text color on hover */
+}
+
+.ga img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.ga img:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+
+.ga figcaption {
+  margin-top: 5px;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.ga figure:hover figcaption {
+  color: #007bff; 
+}
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Styling for header and navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to separate from main content */
+  position: relative; /* Separate it visually from the main */
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Add a gap between header and main content */
+main {
+  flex: 1;
+  padding-top: 2rem; /* Creates space between header and main */
+  margin-top: 20px;  /* Adds a margin to push main down */
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem; /* Adds space below the hero section */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+/* Information grid for images */
+.info-grid {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.grid-item {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.grid-item figure {
+  flex: 1 1 300px;
+  margin: 0;
+}
+
+.grid-item img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.grid-item figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+/* Styling for the newsletter section */
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+  max-width: 400px;
+  padding: 1rem;
+  background-color: #212121;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-signup input {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.newsletter-signup button {
+  padding: 0.7rem;
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter-signup button:hover {
+  background-color: hsl(63, 80%, 50%);
+}
+.trips-table{
+  justify-content: center;
+  padding-bottom: 0px;
+  padding: 0px;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: left;
+  padding-bottom: 10px;
+margin-bottom: 40px;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+/* Header row styling */
+th {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
